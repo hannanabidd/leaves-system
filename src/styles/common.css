@@ -1,0 +1,129 @@
+html,
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background: linear-gradient(
+      166.98deg,
+      rgba(119, 255, 231, 0.315) -2.08%,
+      rgba(255, 137, 229, 0.185) 46.73%,
+      rgba(56, 88, 255, 0.155) 97.62%
+    ),
+    #ffffff; */
+}
+:root {
+  --primaryColor: #008080;
+  --secondaryColor: #25ce8f;
+  --textColor: #2a2a2a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+::placeholder {
+  padding-left: 5px;
+  color: #c4c4c4;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  padding-left: 20px;
+  border: 1px solid #ccc;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.contain {
+  padding: 0px 120px;
+}
+.section {
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+.header {
+  /* padding: 20px 0px; */
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(17px);
+  border-radius: 0px 0px 40px 40px;
+}
+.footer {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(17px);
+  border-radius: 30px 30px 0px 0px;
+  padding: 30px 0px;
+}
+.btn-shadow {
+  box-shadow: 0px 2.14925px 2.14925px rgba(0, 0, 0, 0.25);
+}
+.box {
+  background: rgba(84, 90, 222, 0.4);
+  border: 0.829675px solid #545ade;
+  backdrop-filter: blur(14.1045px);
+  border-radius: 16.5935px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  img {
+    margin-top: 10px;
+  }
+  .column {
+    flex-direction: column-reverse;
+  }
+}
+
+.react-dropdown-select {
+  height: 49px;
+  border-radius: 10px 0px 10px 10px !important;
+  background: #e0dfdf;
+}
+.react-dropdown-select
+  .react-dropdown-select-content
+  .react-dropdown-select-input {
+  width: auto;
+}
+.react-dropdown-select .react-dropdown-select-option {
+  background-color: var(--primaryColor);
+}
+.react-dropdown-select .react-dropdown-select-dropdown {
+  background-color: #e0dfdf;
+}
+
+.react-dropdown-select
+  .react-dropdown-select-dropdown
+  .react-dropdown-select-item {
+  border-bottom: none !important;
+}
+.react-dropdown-select
+  .react-dropdown-select-dropdown
+  .react-dropdown-select-item-selected {
+  /* background-color: var(--primaryColor); */
+  background-color: var(--primaryColor);
+  border-bottom: none !important;
+}

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  sup {
+    top: -1em;
+  }
+  sub {
+    bottom: 0.15em;
+    margin-left: 12px;
+  }
+  li,
+  p,
+  div {
+    @apply font-normal;
+  }
+}
+@layer components {
+  .commonBtn {
+    @apply inline-flex items-center justify-center h-[36px] px-[20px] rounded-md font-semibold no-underline hover:rounded-md active:rounded-sm active:bg-black focus:outline-0 focus:outline-offset-0 focus:outline-transparent focus:ring focus:ring-0 disabled:opacity-25 transition ease-in-out duration-150;
+  }
+  .primaryBtn {
+    @apply bg-[var(--primaryColor)] text-[#fff] h-[50px] border-[var(--primaryColor)] border hover:text-[var(--primaryColor)] hover:bg-white;
+  }
+  .secondaryBtn {
+    @apply bg-[#fff] text-[var(--primaryColor)] border-[var(--primaryColor)] border hover:text-[#fff] hover:bg-[var(--primaryColor)];
+  }
+  .text {
+    @apply text-[#000000] leading-[26px] text-[14px] font-normal tracking-[0.75px];
+  }
+  .heading {
+    @apply text-[#000000] leading-[70px]  md:text-[60px] text-[40px] font-[250] -tracking-[0.75px];
+  }
+  .paragraph {
+    @apply text-[#000000] leading-[32px] text-[20px] font-normal -tracking-[0.75px];
+  }
+}

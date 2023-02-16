@@ -1,0 +1,12 @@
+.header {
+  @apply flex justify-between md:px-[120px] px-[10px] py-[20px] items-center;
+}
+.links {
+  @apply md:flex items-center gap-5  hidden;
+}
+.items {
+  @apply cursor-pointer font-normal text-title16 text-black font-helvetica leading-[19px];
+}
+.flag {
+  @apply ml-[40px] cursor-pointer;
+}
